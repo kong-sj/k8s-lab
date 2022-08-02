@@ -27,7 +27,7 @@ spec:
     spec:
       containers:
         - name: naver
-          image: io.kr.ncr.ntruss.com/nks/hello:plain-text
+          image: sjhong1994/k8s-lab:1.0
           ports:
             - containerPort: 80
 
@@ -61,7 +61,7 @@ spec:
     spec:
       containers:
         - name: cloud
-          image: io.kr.ncr.ntruss.com/nks/hello:plain-text
+          image: sjhong1994/k8s-lab:1.0
           ports:
             - containerPort: 80
 
@@ -95,6 +95,6 @@ spec:
     spec:
       containers:
         - name: platform
-          image: io.kr.ncr.ntruss.com/nks/hello:plain-text
+          image: sjhong1994/k8s-lab:1.0
           ports:
             - containerPort: 80
