@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nks-metrics-exporter
+data:
+  baseurl: https://cw.apigw.ntruss.com
+  basepath: /cw_collector/real/data
+  dmn_cd: PUB
+  prodkey: "526115048926613504"
+  nrn: nrn:PUB:VPCKubernetesService:KR:2633384:Cluster/bf53abe3-186c-4c32-adca-3e1adc39c586
+  accesskey: 92CFF3BFB5C978367F9D
+  secretkey: 40E660C65D74E89D2A97BE7B7F291DFC91C6496D
+  ignore_namespaces: kube-system
