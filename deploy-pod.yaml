@@ -17,6 +17,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: naver
+  labels:
+    app.kubernetes.io/instance: kong-app
 spec:
   replicas: 10
   selector:
@@ -53,6 +55,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: cloud
+  labels:
+    app.kubernetes.io/instance: kong-app
 spec:
   replicas: 10
   selector:
@@ -89,6 +93,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: platform
+  labels:
+    app.kubernetes.io/instance: kong-app
 spec:
   replicas: 10
   selector:
